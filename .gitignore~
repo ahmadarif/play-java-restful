@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+=======
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+>>>>>>> e8b65318b08258879b5424e587c4800c594f7a28
