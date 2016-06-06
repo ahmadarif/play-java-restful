@@ -10,5 +10,14 @@ POST    /task                       controllers.Application.taskInsert()
 PUT     /task                       controllers.Application.taskUpdate()
 DELETE  /task/:id                   controllers.Application.taskDelete(id:Long)
 
+GET     /hello/:name/:age           controllers.Test.hello(name: String, age:Int)
+GET     /ws                         controllers.Test.testWS()
+GET     /ws2                         controllers.Test.testWS2()
+GET     /parallel                   controllers.Test.parallel()
+GET     /params                     controllers.Test.params()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# Access static resources using @routes.Assets.at("images/play-logo.jpg")
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

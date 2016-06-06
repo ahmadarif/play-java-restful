@@ -1,0 +1,12 @@
+@(name:String, age:Int)
+
+<html>
+    <head></head>
+    <body>
+        @*<img src="/assets/images/play-logo.jpg" />*@
+        <img src="@routes.Assets.at("images/play-logo.jpg")" />
+        <p>
+            Hello <b>@name</b>, you are <b>@age</b> years old!
+        </p>
+    </body>
+</html>
